@@ -1,0 +1,7 @@
+node_modules
+/public/
+/log.txt
+
+*.zip
+*.rar
+*.7z
