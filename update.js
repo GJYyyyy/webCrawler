@@ -246,7 +246,7 @@ async function recursion(originUrl = '/') {
         let fileContent = buffer.toString();
 
         // 去除协议和域名
-        fileContent = fileContent.replace(new RegExp(`(https?:\/\/)?(${host})?`, 'g'), '');
+        fileContent = fileContent.replace(new RegExp(`((https?:\/\/)?${host})?`, 'g'), '');
 
         // 创建文件并写入内容
         let pathname = path.resolve(__dirname, `${wwwPath}${urlPath}`);
